@@ -1,0 +1,12 @@
+name: MVC Test Workflow
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo 'MVC workflow'
